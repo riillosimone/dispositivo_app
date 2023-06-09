@@ -1,0 +1,51 @@
+<main class="flex-shrink-0">
+    <div class="container">
+      
+      <div class='card'>
+          <div class='card-header'>
+              Visualizza dettaglio
+          </div>
+      
+          <div class='card-body'>
+              <dl class="row">
+                <dt class="col-sm-3 text-right">Id:</dt>
+                <dd class="col-sm-9">{{dispositivo?.id}}</dd>
+              </dl>
+              
+              <dl class="row">
+                <dt class="col-sm-3 text-right">Marca:</dt>
+                <dd class="col-sm-9">{{dispositivo?.marca}}</dd>
+              </dl>
+              
+              <dl class="row">
+                <dt class="col-sm-3 text-right">Modello:</dt>
+                <dd class="col-sm-9">{{dispositivo?.modello}}</dd>
+              </dl>
+              
+            
+              <dl class="row">
+                <dt class="col-sm-3 text-right">Prezzo:</dt>
+                <dd class="col-sm-9">{{dispositivo?.prezzo}}</dd>
+              </dl>
+
+              <dl class="row">
+                <dt class="col-sm-3 text-right">Data Produzione:</dt>
+                <dd class="col-sm-9">{{dispositivo?.dataProduzione | date:'dd/MM/yyyy' }}</dd>
+              </dl>
+
+              <dl class="row">
+                <dt class="col-sm-3 text-right">In Produzione:</dt>
+                <dd class="col-sm-9">{{dispositivo?.inProduzione?'SI':'NO'}}</dd>
+              </dl>
+              
+             
+              </div>
+              
+          <!-- end card body -->
+          </div>
+          
+          
+      <!-- end card -->
+      </div>  
+  
+</main>
